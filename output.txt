@@ -1,0 +1,266 @@
+Successfully connected to Milvus.
+Collection face_collection already exists.  Loading...
+Running on device: cpu
+FaceNet model loaded successfully.
+Connected to PostgreSQL
+Tables created successfully.
+Connected to PostgreSQL
+Collection dermatology_rag_collection already exists. Loading...
+Collection dermatology_rag_collection is not empty. Skipping loading and embedding.
+Collection gastroentology_rag_collection already exists. Loading...
+Collection gastroentology_rag_collection is not empty. Skipping loading and embedding.
+Collection pediatrics_rag_collection already exists. Loading...
+Collection pediatrics_rag_collection is not empty. Skipping loading and embedding.
+Face embedding during registration: [ 7.10804420e-02  5.61666455e-02  1.09057038e-02  8.00145743e-02
+ -2.90002489e-02  4.21280203e-02 -6.50398097e-02 -2.46609663e-03
+ -4.45341516e-02 -1.82805498e-02 -4.91299861e-02 -5.16353815e-02
+ -5.32012290e-02  2.40369239e-02 -9.84713191e-03 -4.83435885e-02
+  2.16192441e-02  7.28080453e-02  7.60163769e-02  2.14337936e-02
+  1.40517253e-02  7.51148343e-02 -2.99566757e-03 -4.05220477e-02
+  4.69964640e-02  7.61148428e-03  5.30109151e-02  3.03107459e-03
+  7.10611748e-02 -7.21344607e-02 -1.23460546e-02  8.67211674e-03
+ -3.54000980e-02  1.15468095e-02 -5.39884498e-03  2.22092742e-02
+ -2.71254557e-02 -1.92426990e-02  4.97048356e-02 -2.63293724e-02
+ -2.40304921e-02  1.66206890e-02  3.85462544e-02 -5.74971217e-02
+ -1.46274856e-02 -2.11597836e-02 -7.52379999e-02  1.21676486e-02
+ -4.19984509e-02  2.84106603e-02  7.45294497e-02  7.31941618e-04
+  3.82751725e-02  3.95786590e-02 -1.72225748e-03 -3.56388555e-02
+  2.01674371e-02  5.19693724e-02  5.54381688e-02 -4.77348389e-02
+  7.85340248e-02 -7.56948536e-03  5.88204789e-02  2.20440203e-02
+ -3.21338828e-02  1.71266067e-03  2.28145556e-02  2.08670410e-02
+  1.55832917e-02  2.42049121e-02 -5.41664553e-02 -5.10490050e-03
+  4.40388147e-03  4.01560193e-02  5.14130227e-02 -6.49094022e-02
+ -4.44117460e-02  5.60543979e-03 -4.69558518e-03 -5.75188588e-02
+  7.91051117e-02  1.78886995e-02 -6.51891640e-02 -2.91862731e-02
+ -3.20202056e-02  6.83514286e-02  3.72921318e-02 -4.95144919e-02
+ -5.89972439e-02  7.70993858e-02  1.74660058e-02 -1.03793399e-02
+  1.13589505e-02 -3.23934275e-03 -3.51437645e-02  5.02512760e-02
+  4.26342090e-02  5.22349930e-03 -6.53603783e-02 -1.64023256e-02
+  4.92944986e-02 -4.02399911e-02 -1.75041155e-02 -9.56679377e-02
+ -2.89140457e-02 -5.65376621e-02  2.73910987e-02 -2.51235109e-02
+ -4.57121964e-02  6.61628095e-03  5.79492639e-02 -5.15389635e-02
+  4.67101308e-02  1.76657726e-03  4.17922077e-02 -1.26126122e-02
+  3.94413317e-03 -3.19185275e-02 -5.19885353e-02  4.44251943e-02
+ -6.23060726e-02  5.52785699e-02 -6.72400610e-03  2.62620247e-02
+ -4.82767866e-02 -6.57785049e-02  7.88453920e-02  4.98816667e-03
+ -3.61964718e-02  9.67491212e-02 -1.42638014e-02 -4.97565110e-03
+ -3.87550346e-02 -5.75659800e-02 -3.93714136e-02  5.06591767e-02
+  4.84011592e-02  3.28141506e-02  2.11271128e-02  4.19097332e-02
+  3.96392285e-02 -1.89825695e-02  6.83091466e-02 -5.98646199e-03
+ -3.03804088e-03 -2.03069846e-02  8.21031581e-02  1.63892721e-02
+ -6.81238860e-03 -4.80881975e-02  3.65745106e-02  3.92060219e-02
+ -6.54756612e-02 -5.65358218e-02  7.85032092e-02 -1.26585578e-03
+ -4.98149934e-03  2.24806970e-02  9.70795972e-03  1.93725478e-02
+  2.49342848e-02  8.53403700e-03  6.12846130e-02  1.22274358e-02
+ -7.48535620e-03  1.46416668e-02 -8.51567188e-02 -2.47307983e-02
+ -5.16453839e-02  4.49182067e-02 -2.19067583e-02 -1.27889795e-02
+  8.17945477e-02 -4.36456150e-03  4.30163492e-02 -4.58638492e-02
+ -4.39570706e-02  1.88155275e-02 -4.89122727e-02  8.40741048e-02
+ -4.54089615e-02 -1.97667598e-02 -4.25346655e-02 -7.29663850e-02
+ -7.41219663e-03  2.18090328e-02  3.85528594e-02 -1.39687696e-02
+  4.18299076e-02  7.26233752e-02  3.04946751e-03  6.00346776e-02
+  3.93647752e-02  9.35842228e-03  1.17599249e-02 -1.24670776e-04
+ -1.11714088e-01 -4.00439812e-02  4.36072920e-02 -4.14829267e-02
+  2.27513840e-02  5.68814356e-03 -4.49905145e-02  6.18964844e-02
+  3.07309516e-02 -7.67056300e-02 -7.22142220e-03  1.30437959e-02
+ -3.19561381e-02  3.81619051e-02 -2.26865025e-02 -1.57105876e-02
+  2.83627214e-02  1.80556279e-02 -4.58748537e-02  3.74926940e-02
+  5.40250731e-02 -3.55582267e-03 -2.77477319e-02  1.85100295e-02
+  3.03790346e-02 -9.02224372e-03  1.88802674e-02  6.34287558e-02
+  3.74836378e-02  3.39463408e-02 -2.05103668e-02 -3.03499718e-02
+  3.10262200e-02 -4.36992284e-02  1.17736996e-01  1.96524381e-02
+  4.93860439e-02 -1.29886131e-02 -3.00230012e-02 -1.05506641e-02
+ -3.24464011e-02 -3.61042001e-02  5.32679861e-02  1.03445243e-02
+ -7.81506999e-02 -6.98305327e-02 -5.61956134e-02  3.69708777e-02
+  1.07188740e-02  4.84900669e-02 -1.02056110e-02 -8.27220629e-02
+  2.70335602e-02  2.73304510e-02 -8.22749238e-02 -5.06218232e-02
+ -1.93460740e-02  1.04371480e-02  2.65120122e-02 -3.28977014e-02
+ -4.32040256e-02  2.59091364e-03  1.28870273e-02  1.26049399e-02
+ -7.12398025e-02  4.10478873e-02  3.37983164e-02 -5.77714409e-02
+ -2.76965841e-03 -2.29404369e-02  1.65078016e-02 -4.88910385e-02
+ -1.53971603e-02  5.15323064e-02  5.65613810e-02  4.48537070e-02
+  2.48888469e-03 -1.58657478e-02  3.56550047e-02  7.78111993e-02
+ -7.22936358e-03 -2.14430007e-02  6.09998928e-02  5.28773113e-02
+ -5.08289149e-03 -2.42441934e-02 -3.08828373e-02 -4.14549721e-02
+ -1.86850678e-02  2.08666238e-02 -3.89403231e-02  1.51482616e-02
+  2.04548111e-03  7.31993721e-02  2.54396241e-02 -1.94757513e-02
+ -6.78539422e-03 -3.98005661e-03 -5.45367827e-02 -1.89653177e-02
+ -6.08490520e-02  5.01726799e-02 -3.89180049e-02 -4.68792962e-02
+  2.45598305e-04  1.25976700e-02 -6.64241992e-03  6.58795422e-02
+  4.09089079e-02 -4.43230245e-02  2.25094180e-03  4.32544996e-02
+ -1.45040891e-02 -3.35901360e-02 -2.57201105e-02  1.88424502e-02
+ -1.65049145e-02  7.48897896e-02  5.47749703e-02 -3.94330001e-02
+  1.76255301e-02 -1.37468032e-01 -2.09799737e-04  6.56921378e-02
+  7.78685091e-02 -1.96018943e-03 -2.59262122e-02  3.48158682e-02
+ -3.80259450e-03  2.06924646e-02  1.02247320e-02 -5.02699025e-02
+ -6.18323237e-02 -1.96736038e-03 -7.21572222e-02 -4.18822331e-02
+ -3.82734365e-02 -1.93699885e-02  2.61559019e-03  2.82683281e-02
+  2.65783186e-02 -5.42255384e-02  3.23033835e-02 -6.27497323e-02
+  4.78051900e-03  2.13161117e-02  3.34595944e-02 -1.93199634e-02
+ -3.80472886e-03  2.34758281e-02  3.94878606e-03 -1.19583693e-02
+  2.25384259e-02  4.32686855e-02 -6.15117029e-02 -9.68514139e-03
+ -2.51051303e-02  5.89792433e-02 -5.60689982e-02 -1.29513332e-02
+  3.50482667e-02  2.65455100e-02 -3.48168256e-02  2.64104142e-02
+  9.61804929e-02 -4.67790449e-02  1.27716411e-02  3.52468209e-02
+ -1.77196868e-03  1.80206195e-02  2.81903783e-02 -2.34270007e-02
+ -2.99393312e-02 -4.93729197e-02 -5.57673764e-02  1.01263554e-02
+ -2.31915196e-02  4.23275021e-02  4.49912689e-03  4.99980644e-02
+ -1.20193154e-01  3.36475129e-02 -1.31409626e-02  4.46002196e-02
+  2.97598337e-02  6.97910744e-02  2.48157758e-02  4.37311132e-02
+  8.32241873e-02 -7.65168919e-02 -6.69221689e-02  6.47351629e-02
+ -2.11672007e-02  5.11578105e-02  2.20823126e-02 -9.16338658e-03
+  2.23213561e-03  1.67322838e-02 -1.18243382e-01  1.20065391e-02
+ -6.03408442e-02  5.20214221e-02 -2.78678501e-02  2.12655055e-02
+ -2.93146373e-02 -7.62202173e-02 -5.35202665e-02 -1.65372034e-02
+  2.18428155e-02 -1.13069986e-02 -7.20432582e-02  6.09830880e-02
+  9.26882421e-02 -1.57390735e-03  4.13941418e-02  3.87319043e-02
+  3.78313947e-04  5.14663874e-02 -1.63306826e-02 -1.01142579e-01
+ -3.16137466e-02  3.98317217e-02  3.59688794e-03 -4.66770167e-02
+ -6.45765102e-02 -8.27813565e-03  1.07387345e-02 -5.40332129e-02
+  1.43331942e-02 -2.86307192e-03  4.64052903e-02 -2.74350683e-02
+  2.58558265e-02 -2.32808371e-02 -6.70257218e-03 -2.31471383e-02
+  2.55768917e-02 -1.09144711e-01  1.62783931e-03  4.78100935e-02
+ -2.86629053e-02 -1.11443237e-01  1.99741951e-02 -3.36621458e-02
+  7.22446324e-02  4.77011213e-02 -5.46730836e-02  5.70815779e-04
+ -7.04201269e-02 -1.79307362e-03 -7.31890456e-02  1.17698409e-01
+  2.50221029e-02 -7.46925131e-02  4.52266309e-02 -1.16988777e-02
+ -7.11192074e-02 -2.16541371e-02 -1.28007235e-02 -4.70125051e-02
+  2.34213495e-02  2.10313440e-03  9.05146918e-02  8.27660586e-02
+ -4.27472939e-02  4.88434144e-02  3.66871521e-02  1.11495824e-01
+ -3.34778334e-02  6.34554512e-02  4.50301591e-02  5.40953656e-03
+  3.38108184e-02  8.36222048e-02  3.47349004e-03 -3.40004580e-02
+  3.95152955e-02 -3.99087532e-02 -1.48505569e-02 -4.91724618e-02
+  1.22328757e-02 -2.73377469e-02 -2.43532643e-02 -1.92175794e-02
+ -6.08383502e-03  1.16681468e-02  8.23724072e-02  5.97907642e-02
+ -2.21599812e-02 -2.87507625e-02  1.88464735e-02  1.08895564e-01
+  1.67645541e-02  4.82094120e-03  1.56785650e-02 -5.65884154e-02
+  2.09294694e-02  2.57123340e-02 -2.92479546e-02  1.60196340e-02
+  4.02399427e-02  1.73663058e-02  2.03249275e-02 -1.02294947e-02
+  7.31553317e-02  4.15928116e-02  1.70646831e-03  3.15407459e-02
+ -6.37657716e-03 -1.22551082e-02  4.19579272e-02 -5.34016272e-02
+ -8.35200797e-02 -7.34244169e-02  1.92401621e-02  2.58731547e-02]
+Face registered for patient test_patient
+Similarity score: 1.0
+Face recognized as test_patient with similarity 1.0
+Connected to PostgreSQL
+Found the patient from the database.test_patient
+State Init {'messages': [HumanMessage(content='Patient presents with a stomach ache and fatigue. Current medications: Has Wheezing.', additional_kwargs={}, response_metadata={})], 'patient_id': 'test_patient', 'name': 'Patient', 'specialization': None}
+Creating LangGraph
+================================ Human Message =================================
+
+Patient presents with a stomach ache and fatigue. Current medications: Has Wheezing.
+================================== Ai Message ==================================
+Name: supervisor
+
+Given the patient's stomach ache, fatigue, and current medication for wheezing, I'll proceed with caution. It's important to rule out any potential interactions between the wheezing medication and the new symptoms. I'll transfer to the gastroentology agent to get a specialist opinion on the stomach ache and fatigue.
+Tool Calls:
+  transfer_to_gastroentologist (6886e360-ec66-448d-90de-b285b5178f35)
+ Call ID: 6886e360-ec66-448d-90de-b285b5178f35
+  Args:
+================================= Tool Message =================================
+Name: transfer_to_gastroentologist
+
+Successfully transferred to gastroentologist
+================================== Ai Message ==================================
+Name: gastroentologist
+
+To assess the patient's stomach ache and fatigue, I need to investigate potential gastrointestinal issues. Could you please provide more details about the stomach ache, such as the location, duration, character (e.g., sharp, dull, burning), timing (e.g., after meals, at night), and any relieving or aggravating factors? Also, can you describe the nature of the fatigue and its duration? Information about bowel habits (frequency, consistency, color of stools), appetite, weight changes, any associated symptoms like nausea, vomiting, heartburn, or abdominal distension would be helpful. Additionally, details about the patient's medical history, including any known gastrointestinal disorders, family history of GI diseases, alcohol consumption, smoking history, and any recent travel, would be beneficial. Finally, please clarify the current medications, including dosages, and the nature and severity of the patient's wheezing.
+================================== Ai Message ==================================
+Name: gastroentologist
+
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (2ba72281-824a-4630-8245-2cf40af3c7e8)
+ Call ID: 2ba72281-824a-4630-8245-2cf40af3c7e8
+  Args:
+================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+
+Successfully transferred back to supervisor
+================================== Ai Message ==================================
+Name: supervisor
+
+I have transferred this case to a gastroenterologist for further evaluation.
+
+
+
+
+
+Found the patient from the database.test_patient
+State Init {'messages': [HumanMessage(content='Patient presents with a stomach ache and fatigue. Current medications: Has Wheezing.', additional_kwargs={}, response_metadata={})], 'patient_id': 'test_patient', 'name': 'Patient', 'specialization': None}
+Creating LangGraph
+<Collection>:
+-------------
+<name>: gastroentology_rag_collection
+<description>: RAG data for gastroentology
+<schema>: {'auto_id': True, 'description': 'RAG data for gastroentology', 'fields': [{'name': 'id', 'description': '', 'type': <DataType.INT64: 5>, 'is_primary': True, 'auto_id': True}, {'name': 'embedding', 'description': '', 'type': <DataType.FLOAT_VECTOR: 101>, 'params': {'dim': 384}}, {'name': 'text', 'description': '', 'type': <DataType.VARCHAR: 21>, 'params': {'max_length': 65535}}], 'enable_dynamic_field': False}
+ collection found 
+README.md: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10.5k/10.5k [00:00<00:00, 77.2MB/s]
+Results ["id: 456303077940531011, distance: 0.5429969429969788, entity: {'text': 'The Patient with Abdominal Pain  59\\nintestinal obstruction or mesenteric ischemia. Duodenal obstruction provokes \\npain within minutes of eating, whereas ileal lesions cause pain one to two hours \\nafter a meal. Pain from mesenteric ischemia is intensified after meals due to the \\ninability of the impaired blood supply to satisfy the metabolic demands of the \\ngut. Lactase deficiency may produce discomfort that is specific to consumption'}", "id: 456303077940540731, distance: 0.542996883392334, entity: {'text': 'The Patient with Abdominal Pain  59\\nintestinal obstruction or mesenteric ischemia. Duodenal obstruction provokes \\npain within minutes of eating, whereas ileal lesions cause pain one to two hours \\nafter a meal. Pain from mesenteric ischemia is intensified after meals due to the \\ninability of the impaired blood supply to satisfy the metabolic demands of the \\ngut. Lactase deficiency may produce discomfort that is specific to consumption'}", "id: 456303077940530966, distance: 0.5204600095748901, entity: {'text': 'gastrointestinal medications (e.g. sulfasalazine).\\nDisorders of\\xa0the\\xa0gastrointestinal tract and\\xa0peritoneum\\nGut and peritoneal disorders represent prevalent causes of nausea and vomit-\\ning. Gastric outlet obstruction often produces intermittent symptoms, whereas \\nsmall intestinal obstruction is usually acute and associated with abdominal \\npain. Disorders of gut motor activity (e.g. gastroparesis and chronic intestinal \\npseudo‐obstruction) evoke nausea because of an inability to clear retained'}"]
+The Patient with Abdominal Pain  59
+intestinal obstruction or mesenteric ischemia. Duodenal obstruction provokes 
+pain within minutes of eating, whereas ileal lesions cause pain one to two hours 
+after a meal. Pain from mesenteric ischemia is intensified after meals due to the 
+inability of the impaired blood supply to satisfy the metabolic demands of the 
+gut. Lactase deficiency may produce discomfort that is specific to consumption
+The Patient with Abdominal Pain  59
+intestinal obstruction or mesenteric ischemia. Duodenal obstruction provokes 
+pain within minutes of eating, whereas ileal lesions cause pain one to two hours 
+after a meal. Pain from mesenteric ischemia is intensified after meals due to the 
+inability of the impaired blood supply to satisfy the metabolic demands of the 
+gut. Lactase deficiency may produce discomfort that is specific to consumption
+gastrointestinal medications (e.g. sulfasalazine).
+Disorders of the gastrointestinal tract and peritoneum
+Gut and peritoneal disorders represent prevalent causes of nausea and vomit-
+ing. Gastric outlet obstruction often produces intermittent symptoms, whereas 
+small intestinal obstruction is usually acute and associated with abdominal 
+pain. Disorders of gut motor activity (e.g. gastroparesis and chronic intestinal 
+pseudo‐obstruction) evoke nausea because of an inability to clear retained
+Context gastrointestinal medications (e.g. sulfasalazine).
+Disorders of the gastrointestinal tract and peritoneum
+Gut and peritoneal disorders represent prevalent causes of nausea and vomit-
+ing. Gastric outlet obstruction often produces intermittent symptoms, whereas 
+small intestinal obstruction is usually acute and associated with abdominal 
+pain. Disorders of gut motor activity (e.g. gastroparesis and chronic intestinal 
+pseudo‐obstruction) evoke nausea because of an inability to clear retained
+Sending context
+================================ Human Message =================================
+Patient presents with a stomach ache and fatigue. Current medications: Has Wheezing.
+================================== Ai Message ==================================
+Name: supervisor
+Given the patient's symptoms of a stomach ache and fatigue, and considering their current medication for wheezing, I'd like to consult with the gastroenterology agent to explore potential causes and interactions.
+Tool Calls:
+  transfer_to_gastroentologist (f7c29a48-54eb-4135-ac8a-49d23dddf4e0)
+ Call ID: f7c29a48-54eb-4135-ac8a-49d23dddf4e0
+  Args:
+================================= Tool Message =================================
+Name: transfer_to_gastroentologist
+Successfully transferred to gastroentologist
+================================== Ai Message ==================================
+Name: gastroentologist
+I am a gastroenterological expert. I will use my knowledge and the provided tools to assist in diagnosing the patient. I will start by collecting information about the possible causes of a stomach ache and fatigue.
+Tool Calls:
+  rag_context (2d1f0da8-e2f5-4fdb-a8c1-046f8e39898d)
+ Call ID: 2d1f0da8-e2f5-4fdb-a8c1-046f8e39898d
+  Args:
+    input: causes of stomach ache and fatigue
+================================= Tool Message =================================
+Name: rag_context
+gastrointestinal medications (e.g. sulfasalazine).
+Disorders of the gastrointestinal tract and peritoneum Gut and peritoneal disorders represent prevalent causes of nausea and vomit-ing. Gastric outlet obstruction often produces intermittent symptoms, whereas small intestinal obstruction is usually acute and associated with abdominal pain. Disorders of gut motor activity (e.g. gastroparesis and chronic intestinal pseudo‐obstruction)evoke nausea because of an inability to clear retained
+================================== Ai Message =================================
+Name: gastroentologist
+Possible causes of stomach ache and fatigue include gastrointestinal disorders, gut and peritoneal disorders, gastric outlet obstruction, small intestinal obstruction, and disorders of gut motor activity. Given the patient's current medication for wheezing, it's important to consider potential medication side effects or interactions as well. I would like to know more about the patient's medical history, and conduct a thorough examination, including abdominal examination, and possibly order blood tests and stool tests to investigate further.
+================================== Ai Message ==================================
+Name: gastroentologist
+Transferring back to supervisor
+Tool Calls:
+  transfer_back_to_supervisor (460b2062-045f-4062-8713-5875723f9a7b)
+ Call ID: 460b2062-045f-4062-8713-5875723f9a7b
+  Args:
+================================= Tool Message =================================
+Name: transfer_back_to_supervisor
+Successfully transferred back to supervisor
+================================== Ai Message ==================================
+Name: supervisor
+Since I am a general physician, I can suggest some general advice. Ensure the patient stays hydrated, eats easily digestible foods, and gets enough rest. Since the patient is also on medication for wheezing, it's important to rule out any potential drug interactions or side effects contributing to the symptoms.

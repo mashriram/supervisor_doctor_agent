@@ -1,4 +1,3 @@
-import os
 from face_recognition.face_rec import register_patient_face, scan_face_and_get_patient_id
 from database.postgres_db import get_user_info, connect_to_postgres, register_user
 from langgraph_app.langgraph_flow import create_langgraph
@@ -34,8 +33,7 @@ def main():
     load_and_embed_docs("pediatrics")
 
     # Create LangGraph
-    graph = create_langgraph()
-    chain = graph
+    
 
     # Simulate the patient interaction
     face_image_path = "patient_image.jpg"  # Replace with actual path
@@ -50,12 +48,12 @@ def main():
         user_info = get_user_info(recognized_patient_id)
         if user_info:
             medication_history = user_info["medication_history"]
-            initial_patient_information = f"Patient presents with a headache and fatigue. Current medications: {medication_history if medication_history else 'None'}."
-            print(f"Found the patient from the database.")
+            initial_patient_information = f"Patient presents with a stomach ache and fatigue. Current medications: {medication_history if medication_history else 'None'}."
+            print(f"Found the patient from the database.{recognized_patient_id}")
         else:
             print(f"Patient with id {recognized_patient_id} has not been registered. Please add a name and medical history")
             medication_history = "Unknown"
-            initial_patient_information = f"Patient presents with a headache and fatigue. Current medications: {medication_history if medication_history else 'None'}."
+            initial_patient_information = f"Patient presents with a stomach ache  and fatigue. Current medications: {medication_history if medication_history else 'None'}."
             name = input("Please enter the patient's name: ")
             medication_history = input("Please enter the patient's medication history: ")
             register_user(recognized_patient_id, name, medication_history)
@@ -63,12 +61,14 @@ def main():
         # Initialize the state
         state = initialize_state(recognized_patient_id, initial_patient_information)
         print("State Init",state)
-
+        graph = create_langgraph(state=state)
+        chain = graph
         #Run the LangGraph
-        result = chain.invoke(state,{"recursion_limit": 3})
+        result = chain.invoke(state,{"recursion_limit": 9})
 
         # Print the final result
-        print(result)
+        for message in result['messages']:
+            message.pretty_print()
     else:
         print("Could not identify patient.")
 

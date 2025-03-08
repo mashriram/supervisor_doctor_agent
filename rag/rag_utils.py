@@ -70,7 +70,7 @@ def retrieve_context(specialization_name: str, query: str, top_k: int = 5):
     if not collection:
         print(f"Collection {specialization_name}_rag_collection not found.")
         return []
-
+    print(collection,"collection found ")
     embedding_model = SentenceTransformer(_EMBEDDING_MODEL)
     query_embedding = embedding_model.encode(query).tolist()
 
@@ -86,6 +86,19 @@ def retrieve_context(specialization_name: str, query: str, top_k: int = 5):
         limit=top_k,
         output_fields=["text"]
     )
-
-    context = [hit.entity.get("text") for hit in results[0]]
+    print("Results",results[0])
+    for hits in results:
+        for hit in hits:
+            print("In hit")
+            context = hit.entity.get("text")
+            print(context)
+    print("Context",context)
+    print("Sending context")
     return context
+
+def main():
+    print("in Main")
+    print(retrieve_context("dermatology","skin disease"))
+    
+if __name__ == "__main__":
+    main()

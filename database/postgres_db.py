@@ -66,6 +66,28 @@ def store_chat_history(patient_id, message, role):
         conn.rollback()  # Rollback in case of error
     finally:
         conn.close()
+        
+def get_chat_history(patient_id,number_of_items_to_retreive:int):
+    conn, cursor = connect_to_postgres()
+    if not conn or not cursor:
+        return
+
+    try:
+        cursor.execute(
+            "SELECT meesage,role FROM chat_history WHERE patient_id = %s",
+            (patient_id,)
+        )
+        result = cursor.fetchmany(number_of_items_to_retreive)
+        if result:
+            message,role = result
+            return {'message':message,"role":role}
+        else:
+            return None
+    except psycopg2.Error as e:
+        print(f"Error fetching chat history: {e}")
+    finally:
+        conn.close()
+    
 
 def register_user(patient_id, name, medication_history):
     conn, cursor = connect_to_postgres()
